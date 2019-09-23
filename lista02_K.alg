@@ -9,68 +9,68 @@ Inicio
 
 repita
 limpatela
-escreval("Escolha um dos cargos abaixos usando os seus CÛdigos para Reajuste de Sal·rio:")
+escreval("Escolha um dos cargos abaixos usando os seus C√≥digos para Reajuste de Sal√°rio:")
 escreval("")
-escreval("| C”DIGO |    CARGO     | PERCENTUAL |")
+escreval("| C√ìDIGO |    CARGO     | PERCENTUAL |")
 escreval("--------------------------------------")
-escreval("|   1    | ESCRITUR¡RIO |     50%    |")
-escreval("|   2    | SECRET¡RIO   |     35%    |")
+escreval("|   1    | ESCRITUR√ÅRIO |     50%    |")
+escreval("|   2    | SECRET√ÅRIO   |     35%    |")
 escreval("|   3    | CAIXA        |     20%    |")
 escreval("|   4    | GERENTE      |     10%    |")
 escreval("|   5    | DIRETOR      | sem aumento|")
 escreval("")
-escreva("Agora insira o CÛdigo correspondente ao cargo: ")
+escreva("Agora insira o C√≥digo correspondente ao cargo: ")
 leia(codigo)
 
 escolha codigo
-//Escritu·rio:
+//Escritu√°rio:
 caso 1
-     escreval("O Cargo escolhido È ESCRITU¡RIO")
-     escreva("Insira o Sal·rio atual: ")
+     escreval("O Cargo escolhido √© ESCRITU√ÅRIO")
+     escreva("Insira o Sal√°rio atual: ")
      leia(salario)
      reajustado<- (salario*0.50)+salario
-     escreval("Sal·rio Atual: R$", salario)
-     escreval("Sal·rio Reajustado: R$", reajustado)
-//Secret·rio:
+     escreval("Sal√°rio Atual: R$", salario)
+     escreval("Sal√°rio Reajustado: R$", reajustado)
+//Secret√°rio:
 caso 2
-     escreval("O Cargo escolhido È SECRET¡RIO")
-     escreva("Insira o Sal·rio atual: ")
+     escreval("O Cargo escolhido √© SECRET√ÅRIO")
+     escreva("Insira o Sal√°rio atual: ")
      leia(salario)
      reajustado<- (salario*0.35)+salario
-     escreval("Sal·rio Atual: R$", salario)
-     escreval("Sal·rio Reajustado: R$", reajustado)
+     escreval("Sal√°rio Atual: R$", salario)
+     escreval("Sal√°rio Reajustado: R$", reajustado)
 //Caixa:
 caso 3
-     escreval("O Cargo escolhido È CAIXA")
-     escreva("Insira o Sal·rio atual: ")
+     escreval("O Cargo escolhido √© CAIXA")
+     escreva("Insira o Sal√°rio atual: ")
      leia(salario)
      reajustado<- (salario*0.20)+salario
-     escreval("Sal·rio Atual: R$", salario)
-     escreval("Sal·rio Reajustado: R$", reajustado)
+     escreval("Sal√°rio Atual: R$", salario)
+     escreval("Sal√°rio Reajustado: R$", reajustado)
 //Gerente:
 caso 4
-     escreval("O Cargo escolhido È GERENTE")
-     escreva("Insira o Sal·rio atual: ")
+     escreval("O Cargo escolhido √© GERENTE")
+     escreva("Insira o Sal√°rio atual: ")
      leia(salario)
      reajustado<- (salario*0.10)+salario
-     escreval("Sal·rio Atual: R$", salario)
-     escreval("Sal·rio Reajustado: R$", reajustado)
+     escreval("Sal√°rio Atual: R$", salario)
+     escreval("Sal√°rio Reajustado: R$", reajustado)
 //Diretor:
-caso 1
-     escreval("O Cargo escolhido È DIRETOR")
-     escreva("Insira o Sal·rio atual: ")
+caso 5
+     escreval("O Cargo escolhido √© DIRETOR")
+     escreva("Insira o Sal√°rio atual: ")
      leia(salario)
-     escreval("Sal·rio Atual: R$", salario)
-     escreval("N√O H¡ REAJUSTE")
-     escreval("Sal·rio Reajustado: R$", salario)
+     escreval("Sal√°rio Atual: R$", salario)
+     escreval("N√ÉO H√Å REAJUSTE")
+     escreval("Sal√°rio Reajustado: R$", salario)
 outrocaso
-     escreval("CÛdigo Inv·lido!!!")
+     escreval("C√≥digo Inv√°lido!!!")
 fimescolha
 
 escreval("FIM DO PROGRAMA!")
 escreva("APERTE (ENTER) PARA REINICIAR")
 
 leia(op)
-ate codigo = 5
+ate codigo > 5
 
 Fimalgoritmo
